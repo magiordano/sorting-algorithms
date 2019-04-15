@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 let arr = [3,4,6,1,2,7];
 let arr2 =[7,8,5,8,9,2,5];
+
 const bubbleSort = (arr) => {
 for(let y = arr.length; y >= 0; y--)
 {
@@ -14,7 +15,7 @@ for (let x = 0; x<arr.length; x++){
     }
 }
     console.log("final:" + arr);
-    return arr;
+    // return arr;
 }
 
 
@@ -23,9 +24,9 @@ class BubbleSort extends Component {
 
   render() {
     return (
-      <div>
-        {bubbleSort(arr)}
-      </div>
+    <button onClick={() => bubbleSort(arr)}>
+        Bubble Sort
+      </button>
     );
   }
 }

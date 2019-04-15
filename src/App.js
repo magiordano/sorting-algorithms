@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SelectionSort from './components/SelectionSort';
 import ArrayGenerator from './components/ArrayGenerator';
 import BubbleSort from './components/BubbleSort';
+import InsertionSort from './components/InsertionSort';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <ArrayGenerator></ArrayGenerator>
         <SelectionSort></SelectionSort>
         <BubbleSort></BubbleSort>
+        <InsertionSort></InsertionSort>
       </div>
     );
   }
